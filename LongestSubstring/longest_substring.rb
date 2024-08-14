@@ -1,13 +1,16 @@
-s = "dvdf"
+# Given a string s, find the length of the longest substring without repeating characters.
+
+# Example 1:
+
+# Input: s = "abcabcbb"
 # Output: 3
 # Explanation: The answer is "abc", with the length of 3.
-
 
 def length_of_longest_substring(s)
   substring = []
   lengths = []
   if s == ""
-    p 0
+    0
   else
     s.each_char do |letter|
       if substring.include?(letter)
@@ -19,7 +22,7 @@ def length_of_longest_substring(s)
         lengths << substring.length
       end
     end
-    p lengths.max
+    lengths.max
   end
 end
 
